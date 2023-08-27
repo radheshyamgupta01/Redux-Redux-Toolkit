@@ -1,0 +1,24 @@
+.store{
+    background-color: black;
+    height: 250px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.store div{
+    background-color: white;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    background-color: white;
+    width: 450px;
+}
+.store div button{
+    padding-right: 40px;
+    background-color: indigo;
+    color: white;
+    outline: 0;
+    border: 0;
+    height: 25px;
+    border-radius: 5px;
+}

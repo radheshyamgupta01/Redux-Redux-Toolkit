@@ -1,0 +1,28 @@
+.header-div{
+    height: 50px;
+    width: 100%;
+    background-color: rgb(3, 3, 78);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    
+}
+.header-div .redux-auth{
+    padding-left: 60px;
+    
+}
+.header-div .right{
+    display: flex;
+    gap: 20px;
+
+}
+.header-div .right .logout{
+    background-color: rgb(231, 161, 10);
+    color: black;
+    border-radius: 5px;
+    width: 60px;
+    text-align: center;
+
+}
