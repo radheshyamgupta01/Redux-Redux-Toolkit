@@ -4,8 +4,8 @@ import "./ReduxStore.css";
 import { counterActions } from './ManagingReuduxToolkit';
 
 export default function ReduxStore() {
-    const dataCounter = useSelector((state)=> state.counter);
-     const showCounter = useSelector(state => state.showCounter); 
+    const dataCounter = useSelector((state)=> state.counter.counter);
+     const showCounter = useSelector(state => state.counter.showCounter); 
     const dispatch = useDispatch();
 
     const incrementCounter = () => {
@@ -15,22 +15,22 @@ export default function ReduxStore() {
 
     const decrementCounter = () => {
         // dispatch({ type: "decrement" });
-        dispatch((counterActions.decrement()))
+        dispatch(counterActions.decrement())
     }
 
     const incrementBy5 = () => { 
         // dispatch({ type: "incrementby5", amount: 5 });
-        dispatch((counterActions.incrementby5(5)))
+        dispatch((counterActions.IncrementBy5(5)))
     }
 
     const decrementBy5 = () => { 
         // dispatch({ type: "decrementby5", amount: 5 });
-        dispatch(counterActions.decrementby5(5))
+        dispatch(counterActions.DecrementBy5(5))
     }
 
      const toggleCounter = () => {
         // dispatch({ type: "toggle" }); 
-        dispatch(counterActions.Toggle())
+        dispatch(counterActions.toggleCounter())
      }
 
     return (
